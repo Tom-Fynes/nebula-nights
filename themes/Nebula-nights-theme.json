@@ -1,0 +1,143 @@
+{
+  "name": "Nibula Nights",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#404E5C",
+    "editor.foreground": "#B7C3F3",
+    "activityBarBadge.background": "#CF1259",
+    "sideBarTitle.foreground": "#B7C3F3",
+    "activityBar.background": "#2E3A48",
+    "activityBar.foreground": "#B7C3F3",
+    "activityBar.inactiveForeground": "#4F6272",
+    "activityBar.activeBorder": "#DD7596",
+    "sideBar.background": "#363E4A",
+    "sideBar.foreground": "#B7C3F3",
+    "sideBarSectionHeader.background": "#4F6272",
+    "sideBarSectionHeader.foreground": "#B7C3F3",
+    "editorGroupHeader.tabsBackground": "#363E4A",
+    "tab.activeBackground": "#404E5C",
+    "tab.inactiveBackground": "#363E4A",
+    "tab.activeForeground": "#B7C3F3",
+    "tab.inactiveForeground": "#4F6272",
+    "tab.activeBorderTop": "#DD7596",
+    "statusBar.background": "#2E3A48",
+    "statusBar.foreground": "#B7C3F3",
+    "statusBar.noFolderBackground": "#2E3A48",
+    "statusBar.debuggingBackground": "#CF1259",
+    "titleBar.activeBackground": "#2E3A48",
+    "titleBar.activeForeground": "#B7C3F3",
+    "menubar.selectionBackground": "#4F6272",
+    "menubar.selectionForeground": "#B7C3F3",
+    "menu.background": "#363E4A",
+    "menu.foreground": "#B7C3F3",
+    "menu.selectionBackground": "#4F6272",
+    "menu.selectionForeground": "#B7C3F3",
+    "quickInput.background": "#363E4A",
+    "quickInput.foreground": "#B7C3F3",
+    "editorWidget.background": "#363E4A",
+    "editorWidget.foreground": "#B7C3F3",
+    "notifications.background": "#363E4A",
+    "notifications.foreground": "#B7C3F3",
+    "breadcrumb.background": "#404E5C",
+    "breadcrumb.foreground": "#B7C3F3",
+    "progressBar.background": "#DD7596",
+    "terminal.background": "#404E5C",
+    "terminal.foreground": "#B7C3F3",
+    "terminal.ansiBlack": "#363E4A",
+    "terminal.ansiBlue": "#B7C3F3",
+    "terminal.ansiCyan": "#4F6272",
+    "terminal.ansiGreen": "#4F6272",
+    "terminal.ansiMagenta": "#DD7596",
+    "terminal.ansiRed": "#CF1259",
+    "terminal.ansiWhite": "#B7C3F3",
+    "terminal.ansiYellow": "#DD7596"
+  },
+  "tokenColors": [
+    {
+      "name": "Comments",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#4F6272"
+      }
+    },
+    {
+      "name": "String",
+      "scope": ["string", "constant.other.symbol"],
+      "settings": {
+        "foreground": "#B7C3F3"
+      }
+    },
+    {
+      "name": "Keywords",
+      "scope": [
+        "keyword",
+        "storage.type",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#DD7596"
+      }
+    },
+    {
+      "name": "Functions and Methods",
+      "scope": [
+        "entity.name.function",
+        "meta.function-call",
+        "variable.function"
+      ],
+      "settings": {
+        "foreground": "#B7C3F3"
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": [
+        "variable",
+        "support.variable"
+      ],
+      "settings": {
+        "foreground": "#B7C3F3"
+      }
+    },
+    {
+      "name": "Classes",
+      "scope": [
+        "entity.name.type",
+        "entity.name.class",
+        "entity.name.namespace",
+        "entity.name.scope-resolution"
+      ],
+      "settings": {
+        "foreground": "#DD7596"
+      }
+    },
+    {
+      "name": "Numbers",
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#CF1259"
+      }
+    },
+    {
+      "name": "Constants",
+      "scope": "constant",
+      "settings": {
+        "foreground": "#CF1259"
+      }
+    },
+    {
+      "name": "Tags",
+      "scope": "entity.name.tag",
+      "settings": {
+        "foreground": "#DD7596"
+      }
+    },
+    {
+      "name": "Attributes",
+      "scope": "entity.other.attribute-name",
+      "settings": {
+        "foreground": "#B7C3F3"
+      }
+    }
+  ]
+}
