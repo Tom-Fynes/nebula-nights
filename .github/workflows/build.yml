@@ -1,48 +1,49 @@
-name: Build and Release Nebula Nights Theme 
+name: Build and Release Nebula Nights Theme
 
-on: 
-  push: 
-    tags: - 'v*' 
+on:
+  push:
+    tags:
+      - "v*"
 
-jobs: 
-  build: 
-    runs-on: ubuntu-latest 
-    steps: 
-      - name: Checkout code 
-        uses: actions/checkout@v3 
-        
-      - name: Setup Node.js 
-        uses: actions/setup-node@v3 
-        with: 
-            node-version: '18' 
-            
-      - name: Install dependencies 
-        run: npm install 
-        
-      - name: Package extension 
-        run: npx vsce package 
-        
-      - name: Get VSIX filename 
-        id: vsix-name 
-        run: echo "::set-output name=filename::$(ls *.vsix)" 
-        
-      - name: Create Release 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Package extension
+        run: npx vsce package
+
+      - name: Get VSIX filename
+        id: vsix-name
+        run: echo "::set-output name=filename::$(ls *.vsix)"
+
+      - name: Create Release
         id: create_release
-        uses: actions/create-release@v1 
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-        with: 
-          tag_name: ${{ github.ref }} 
-          release_name: Release ${{ github.ref }} 
-          draft: false 
-          prerelease: false 
-          
-      - name: Upload VSIX to Release 
-        uses: actions/upload-release-asset@v1 
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-        with: 
-          upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./${{ steps.vsix-name.outputs.filename }} 
-          asset_name: ${{ steps.vsix-name.outputs.filename }} 
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+
+      - name: Upload VSIX to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./${{ steps.vsix-name.outputs.filename }}
+          asset_name: ${{ steps.vsix-name.outputs.filename }}
           asset_content_type: application/octet-stream
