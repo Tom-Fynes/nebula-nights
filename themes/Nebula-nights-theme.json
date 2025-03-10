@@ -1,10 +1,10 @@
 {
-  "name": "Nibula Nights",
+  "name": "Nebula Nights",
   "type": "dark",
   "colors": {
     "editor.background": "#404E5C",
     "editor.foreground": "#B7C3F3",
-    "activityBarBadge.background": "#CF1259",
+    "activityBarBadge.background": "#D05786",
     "sideBarTitle.foreground": "#B7C3F3",
     "activityBar.background": "#2E3A48",
     "activityBar.foreground": "#B7C3F3",
@@ -23,7 +23,7 @@
     "statusBar.background": "#2E3A48",
     "statusBar.foreground": "#B7C3F3",
     "statusBar.noFolderBackground": "#2E3A48",
-    "statusBar.debuggingBackground": "#CF1259",
+    "statusBar.debuggingBackground": "#D05786",
     "titleBar.activeBackground": "#2E3A48",
     "titleBar.activeForeground": "#B7C3F3",
     "menubar.selectionBackground": "#4F6272",
@@ -48,7 +48,7 @@
     "terminal.ansiCyan": "#4F6272",
     "terminal.ansiGreen": "#4F6272",
     "terminal.ansiMagenta": "#DD7596",
-    "terminal.ansiRed": "#CF1259",
+    "terminal.ansiRed": "#D05786",
     "terminal.ansiWhite": "#B7C3F3",
     "terminal.ansiYellow": "#DD7596"
   },
@@ -64,7 +64,7 @@
       "name": "String",
       "scope": ["string", "constant.other.symbol"],
       "settings": {
-        "foreground": "#B7C3F3"
+        "foreground": "#83AFDF"
       }
     },
     {
@@ -79,14 +79,34 @@
       }
     },
     {
-      "name": "Functions and Methods",
+      "name": "Functions",
       "scope": [
         "entity.name.function",
-        "meta.function-call",
-        "variable.function"
+        "meta.function-call"
       ],
       "settings": {
-        "foreground": "#B7C3F3"
+        "foreground": "#63C5EA"
+      }
+    },
+    {
+      "name": "Function parameters",
+      "scope": [
+        "variable.parameter",
+        "meta.parameter"
+      ],
+      "settings": {
+        "foreground": "#AED6F1"
+      }
+    },
+    {
+      "name": "Function calls",
+      "scope": [
+        "variable.function",
+        "meta.function-call.generic"
+      ],
+      "settings": {
+        "foreground": "#63C5EA",
+        "fontStyle": "italic"
       }
     },
     {
@@ -115,14 +135,14 @@
       "name": "Numbers",
       "scope": "constant.numeric",
       "settings": {
-        "foreground": "#CF1259"
+        "foreground": "#D05786"
       }
     },
     {
       "name": "Constants",
       "scope": "constant",
       "settings": {
-        "foreground": "#CF1259"
+        "foreground": "#D05786"
       }
     },
     {
@@ -137,6 +157,63 @@
       "scope": "entity.other.attribute-name",
       "settings": {
         "foreground": "#B7C3F3"
+      }
+    },
+    {
+      "name": "JSON Property Names",
+      "scope": "support.type.property-name.json",
+      "settings": {
+        "foreground": "#ECDA90"
+      }
+    },
+    {
+      "name": "JSON Property Values",
+      "scope": "string.quoted.double.json",
+      "settings": {
+        "foreground": "#83AFDF"
+      }
+    },
+    {
+      "name": "JSON Punctuation",
+      "scope": [
+        "punctuation.support.type.property-name.begin.json",
+        "punctuation.support.type.property-name.end.json",
+        "punctuation.separator.dictionary.key-value.json",
+        "punctuation.definition.dictionary.begin.json",
+        "punctuation.definition.dictionary.end.json",
+        "punctuation.definition.array.begin.json",
+        "punctuation.definition.array.end.json"
+      ],
+      "settings": {
+        "foreground": "#9F7EBE"
+      }
+    },
+    {
+      "name": "Operators",
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "#9F7EBE"
+      }
+    },
+    {
+      "name": "Method calls",
+      "scope": "meta.method-call entity.name.function",
+      "settings": {
+        "foreground": "#63C5EA"
+      }
+    },
+    {
+      "name": "Method definition",
+      "scope": "meta.method entity.name.function",
+      "settings": {
+        "foreground": "#63C5EA"
+      }
+    },
+    {
+      "name": "Function definition",
+      "scope": "meta.definition.function entity.name.function",
+      "settings": {
+        "foreground": "#63C5EA"
       }
     }
   ]

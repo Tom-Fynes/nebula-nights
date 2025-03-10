@@ -4,11 +4,16 @@ A VS code dark theme using blues, purples and pinks
 ## Colors
 
 This theme uses the following color palette:
-- Dark Blue: #404E5C
-- Steel Blue: #4F6272
-- Lavender: #B7C3F3
-- Pink: #DD7596
-- Magenta: #CF1259
+- Dark Blue: #404E5C (main background)
+- Steel Blue: #4F6272 (inactive elements)
+- Lavender: #B7C3F3 (main text)
+- Pink: #DD7596 (keywords/ highlights)
+- Magenta: #ECDA90 (constants)
+- Light Blue: #83AFDF (strings)
+- Bright Cyan: #63C5EA (functions)
+- Pale Blue: #AED6F1 (parameters)
+- Deep Lavender: #9F7EBE (punctuation)
+- Pale Yellow: #D05786 (JSON properties)
 
 ## Screenshots
 

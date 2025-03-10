@@ -2,8 +2,8 @@
   "name": "nebula-nights",
   "displayName": "Nebula Nights",
   "description": "A dark theme using blues, purples, and pinks",
-  "version": "0.1.0",
-  "publisher": "Tom Fynes",
+  "version": "1.0.0",
+  "publisher": "Tom-Fynes",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -14,7 +14,7 @@
     "themes": [
       {
         "label": "Nebula Nights",
-        "uiTheme": "vs-dark"
+        "uiTheme": "vs-dark",
         "path": "./themes/nebula-nights-theme.json"
       }
     ]
@@ -36,6 +36,6 @@
     "publish": "vsce publish"
   },
   "devDependencies": {
-    "@vscode/vsce": "^2.19.0"
+    "@vscode/vsce": "^2.32.0"
   }
 }
