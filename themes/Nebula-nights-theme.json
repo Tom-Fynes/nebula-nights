@@ -1,6 +1,19 @@
 {
   "name": "Nebula Nights",
   "type": "dark",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function": "#63C5EA",
+    "method": "#63C5EA",
+    "class": "#DD7596",
+    "module": "#9F7EBE",
+    "parameter": "#AED6F1",
+    "variable": "#B7C3F3",
+    "property": "#B7C3F3",
+    "type": "#83AFDF",
+    "enum": "#BCB6FF",
+    "interface": "#B8E1FF"
+  },
   "colors": {
     "editor.background": "#404E5C",
     "editor.foreground": "#B7C3F3",
@@ -44,20 +57,38 @@
     "terminal.background": "#404E5C",
     "terminal.foreground": "#B7C3F3",
     "terminal.ansiBlack": "#363E4A",
-    "terminal.ansiBlue": "#B7C3F3",
-    "terminal.ansiCyan": "#4F6272",
-    "terminal.ansiGreen": "#4F6272",
-    "terminal.ansiMagenta": "#DD7596",
+    "terminal.ansiBlue": "#B8E1FF",
+    "terminal.ansiCyan": "#A9FFF7",
+    "terminal.ansiGreen": "#94FBAB",
+    "terminal.ansiMagenta": "#BCB6FF",
     "terminal.ansiRed": "#D05786",
     "terminal.ansiWhite": "#B7C3F3",
-    "terminal.ansiYellow": "#DD7596"
+    "terminal.ansiYellow": "#DD7596",
+    "terminal.ansiBrightBlue": "#B8E1FF",
+    "terminal.ansiBrightCyan": "#A9FFF7",
+    "terminal.ansiBrightGreen": "#94FBAB",
+    "terminal.ansiBrightMagenta": "#BCB6FF",
+    "editorBracketHighlight.foreground1": "#63C5EA",
+    "editorBracketHighlight.foreground2": "#9F7EBE",
+    "editorBracketHighlight.foreground3": "#83AFDF",
+    "editorBracketHighlight.foreground4": "#BCB6FF",
+    "editorBracketHighlight.foreground5": "#B8E1FF",
+    "editorBracketHighlight.foreground6": "#A9FFF7",
+    "editorError.foreground": "#D05786",
+    "editorWarning.foreground": "#ECDA90",
+    "editorInfo.foreground": "#A9FFF7",
+    "editorHint.foreground": "#82ABA1",
+    "editorLineHighlight.background": "#4F627233",
+    "editor.selectionBackground": "#4F627266",
+    "editor.wordHighlightBackground": "#BCB6FF33",
+    "editor.wordHighlightStrongBackground": "#B8E1FF33"
   },
   "tokenColors": [
     {
       "name": "Comments",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#4F6272"
+        "foreground": "#82ABA1"
       }
     },
     {
@@ -135,7 +166,7 @@
       "name": "Numbers",
       "scope": "constant.numeric",
       "settings": {
-        "foreground": "#D05786"
+        "foreground": "#A9FFF7"
       }
     },
     {
@@ -214,6 +245,373 @@
       "scope": "meta.definition.function entity.name.function",
       "settings": {
         "foreground": "#63C5EA"
+      }
+    },
+    {
+      "name": "SQL Keywords",
+      "scope": [
+        "keyword.control.flow.sql",
+        "keyword.control.import.sql",
+        "keyword.operator.logical.sql"
+      ],
+      "settings": {
+        "foreground": "#DD7596",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "SQL Functions",
+      "scope": [
+        "support.function.builtin.sql"
+      ],
+      "settings": {
+        "foreground": "#63C5EA"
+      }
+    },
+    {
+      "name": "SQL Variables",
+      "scope": [
+        "variable.parameter.function.sql"
+      ],
+      "settings": {
+        "foreground": "#AED6F1"
+      }
+    },
+    {
+      "name": "SQL Constants",
+      "scope": [
+        "constant.language.sql"
+      ],
+      "settings": {
+        "foreground": "#D05786",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "SQL Operators",
+      "scope": [
+        "keyword.operator.sql"
+      ],
+      "settings": {
+        "foreground": "#9F7EBE"
+      }
+    },
+    {
+      "name": "SQL Table names",
+      "scope": [
+        "entity.name.type.table.sql"
+      ],
+      "settings": {
+        "foreground": "#DD7596",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "SQL Column names",
+      "scope": [
+        "entity.name.type.column.sql"
+      ],
+      "settings": {
+        "foreground": "#B7C3F3"
+      }
+    },
+    {
+      "name": "SQL String",
+      "scope": [
+        "string.quoted.single.sql",
+        "string.quoted.double.sql"
+      ],
+      "settings": {
+        "foreground": "#83AFDF"
+      }
+    },
+    {
+      "name": "SQL Comments",
+      "scope": [
+        "comment.line.sql",
+        "punctuation.definition.comment.sql"
+      ],
+      "settings": {
+        "foreground": "#82ABA1"
+      }
+    },
+    {
+      "name": "SQL Punctuation",
+      "scope": [
+        "punctuation.definition.sql"
+      ],
+      "settings": {
+        "foreground": "#9F7EBE"
+      }
+    },
+    {
+      "name": "SQL Variables"
+    },
+    {
+      "name": "Python decorators",
+      "scope": [
+        "meta.decorator.python",
+        "entity.name.function.decorator.python"
+      ],
+      "settings": {
+        "foreground": "#9F7EBE",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Python function parameters",
+      "scope": [
+        "variable.parameter.function.python"
+      ],
+      "settings": {
+        "foreground": "#AED6F1"
+      }
+    },
+    {
+      "name": "Python function call",
+      "scope": [
+        "meta.function-call.python",
+        "meta.function-call.generic.python"
+      ],
+      "settings": {
+        "foreground": "#63C5EA"
+      }
+    },
+    {
+      "name": "Python builtin functions",
+      "scope": [
+        "support.function.builtin.python"
+      ],
+      "settings": {
+        "foreground": "#83AFDF",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Python self parameter",
+      "scope": [
+        "variable.parameter.function.language.special.self.python",
+        "variable.language.special.self.python"
+      ],
+      "settings": {
+        "foreground": "#DD7596",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Python class definitions",
+      "scope": [
+        "entity.name.type.class.python"
+      ],
+      "settings": {
+        "foreground": "#DD7596",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Python module import",
+      "scope": [
+        "meta.import.python", 
+        "entity.name.namespace.python"
+      ],
+      "settings": {
+        "foreground": "#9F7EBE"
+      }
+    },
+    {
+      "name": "Python f-string expressions",
+      "scope": [
+        "meta.fstring.python",
+        "constant.character.format.placeholder.other.python"
+      ],
+      "settings": {
+        "foreground": "#83AFDF"
+      }
+    },
+    {
+      "name": "Python docstrings",
+      "scope": [
+        "string.quoted.docstring.multi.python"
+      ],
+      "settings": {
+        "foreground": "#82ABA1",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Python magic methods",
+      "scope": [
+        "support.function.magic.python"
+      ],
+      "settings": {
+        "foreground": "#83AFDF",
+        "fontStyle": "bold italic"
+      }
+    },
+    {
+      "name": "Python type hints",
+      "scope": [
+        "meta.function.annotation.return.python",
+        "meta.function.parameters.annotation.python",
+        "support.type.python"
+      ],
+      "settings": {
+        "foreground": "#83AFDF"
+      }
+    },
+    {
+      "name": "Python constants (True, False, None)",
+      "scope": [
+        "constant.language.python"
+      ],
+      "settings": {
+        "foreground": "#D05786",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Python exceptions",
+      "scope": [
+        "support.type.exception.python"
+      ],
+      "settings": {
+        "foreground": "#D05786",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Python keywords",
+      "scope": [
+        "keyword.control.flow.python",
+        "keyword.control.import.python",
+        "keyword.operator.logical.python"
+      ],
+      "settings": {
+        "foreground": "#DD7596",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Python string interpolation",
+      "scope": [
+        "constant.character.format.placeholder.other.python"
+      ],
+      "settings": {
+        "foreground": "#ECDA90"
+      }
+    },
+    {
+      "name": "Python list/dict comprehension",
+      "scope": [
+        "meta.comprehension.python"
+      ],
+      "settings": {
+        "foreground": "#B7C3F3"
+      }
+    },
+    {
+      "name": "Python lambda expressions",
+      "scope": [
+        "meta.lambda-function.python"
+      ],
+      "settings": {
+        "foreground": "#9F7EBE"
+      }
+    },
+    {
+      "name": "TypeScript/JavaScript interfaces",
+      "scope": [
+        "entity.name.type.interface"
+      ],
+      "settings": {
+        "foreground": "#B8E1FF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TypeScript/JavaScript enums",
+      "scope": [
+        "entity.name.type.enum"
+      ],
+      "settings": {
+        "foreground": "#BCB6FF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "HTML and XML attributes",
+      "scope": [
+        "entity.other.attribute-name.html",
+        "entity.other.attribute-name.xml"
+      ],
+      "settings": {
+        "foreground": "#94FBAB"
+      }
+    },
+    {
+      "name": "CSS Properties",
+      "scope": [
+        "support.type.property-name.css",
+        "support.type.property-name.scss"
+      ],
+      "settings": {
+        "foreground": "#A9FFF7"
+      }
+    },
+    {
+      "name": "CSS Values",
+      "scope": [
+        "support.constant.property-value.css"
+      ],
+      "settings": {
+        "foreground": "#82ABA1"
+      }
+    },
+    {
+      "name": "Markdown Headers",
+      "scope": [
+        "markup.heading"
+      ],
+      "settings": {
+        "foreground": "#BCB6FF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Links",
+      "scope": [
+        "markup.underline.link"
+      ],
+      "settings": {
+        "foreground": "#B8E1FF"
+      }
+    },
+    {
+      "name": "Markdown Code Blocks",
+      "scope": [
+        "markup.fenced_code.block"
+      ],
+      "settings": {
+        "foreground": "#A9FFF7"
+      }
+    },
+    {
+      "name": "Markdown List Items",
+      "scope": [
+        "markup.list"
+      ],
+      "settings": {
+        "foreground": "#94FBAB"
+      }
+    },
+    {
+      "name": "Markdown Emphasis",
+      "scope": [
+        "markup.italic"
+      ],
+      "settings": {
+        "foreground": "#82ABA1",
+        "fontStyle": "italic"
       }
     }
   ]
