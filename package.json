@@ -2,7 +2,7 @@
   "name": "nebula-nights",
   "displayName": "Nebula Nights",
   "description": "A dark theme using blues, purples, and pinks",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "publisher": "Tom-Fynes",
   "engines": {
     "vscode": "^1.75.0"
