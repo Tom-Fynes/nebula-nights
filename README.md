@@ -17,7 +17,7 @@ This theme uses the following color palette:
 
 ## Screenshots
 
-![Screenshot](resources/images/screenshot.png)
+![Screenshot](https://github.com/Tom-Fynes/nebula-nights/blob/main/resources/Images/Screenshot.png)
 
 ## Installation
 
