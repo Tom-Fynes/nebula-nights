@@ -1,7 +1,7 @@
 {
   "name": "nebula-nights-pastel",
   "displayName": "Nebula Nights Pastel",
-  "description": "A dark theme using blues, purples, and pinks",
+  "description": "A collection of themes using blues, purples, and pinks — dark, light, sakura, Tokyo Nights, and By the Sea",
   "version": "1.2.0",
   "icon": "resources/Images/nebula.png",
   "publisher": "Tom-Fynes",
@@ -17,6 +17,26 @@
         "label": "Nebula Nights",
         "uiTheme": "vs-dark",
         "path": "./themes/nebula-nights-theme.json"
+      },
+      {
+        "label": "Nebula Nights Light",
+        "uiTheme": "vs",
+        "path": "./themes/nebula-nights-light-theme.json"
+      },
+      {
+        "label": "Sakura",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sakura-theme.json"
+      },
+      {
+        "label": "Tokyo Nights",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tokyo-nights-theme.json"
+      },
+      {
+        "label": "By the Sea",
+        "uiTheme": "vs",
+        "path": "./themes/by-the-sea-theme.json"
       }
     ]
   },
@@ -27,10 +47,14 @@
   "keywords": [
     "theme",
     "dark theme",
+    "light theme",
     "cool",
     "blue",
     "pink",
-    "purple"
+    "purple",
+    "sakura",
+    "tokyo nights",
+    "ocean"
   ],
   "scripts": {
     "package": "vsce package",
